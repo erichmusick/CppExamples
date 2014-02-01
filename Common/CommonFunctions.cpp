@@ -1,38 +1,13 @@
-/**
- * I can't take credit for several of these functions. Back when I took my AP Computer Science class, we were using the 
- * Borland IDE / compiler and I wasn't able to find some of the libraries we were using, so I had to find alternatives. 
- * Credit for these functions is listed below. The other missing functions I derived by looking at the given examples and 
- & the MSDN documentation.
- */
 #include <Windows.h>
 
 namespace Common
 {
 
-	/**
-	 * Source: http://stackoverflow.com/questions/15770853/how-to-use-setconsolecursorposition-func
-	 */
-	void GoToXY(int column, int line)
-	{
-		// Create a COORD structure and fill in its members.
-		// This specifies the new position of the cursor that we will set.
-		COORD coord;
-		coord.X = column;
-		coord.Y = line;
-
-		// Obtain a handle to the console screen buffer.
-		// (You're just using the standard console, so you can use STD_OUTPUT_HANDLE
-		// in conjunction with the GetStdHandle() to retrieve the handle.)
-		// Note that because it is a standard handle, we don't need to close it.
-		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-
-		// Finally, call the SetConsoleCursorPosition function.
-		if (!SetConsoleCursorPosition(hConsole, coord))
-		{
-			// Uh-oh! The function call failed, so you need to handle the error.
-			// You can call GetLastError() to get a more specific error code.
-			// ...
-		}
+	void GoToXY(int x, int y) {
+		COORD c;
+		c.X = x;
+		c.Y = y;
+		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), c);
 	}
 
 	int GetCursorXPosition()
@@ -96,44 +71,32 @@ namespace Common
 			)) return;
 	}
 
-	/**
-	 * Source: http://www.cplusplus.com/articles/4z18T05o/
-	 */
 	void ClearScreen()
 	{
-		HANDLE                     hStdOut;
-		CONSOLE_SCREEN_BUFFER_INFO csbi;
-		DWORD                      count;
-		DWORD                      cellCount;
-		COORD                      homeCoords = { 0, 0 };
+		COORD coord;
+		DWORD written;
+		CONSOLE_SCREEN_BUFFER_INFO info;
 
-		hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
-		if (hStdOut == INVALID_HANDLE_VALUE) return;
+		coord.X = 0;
+		coord.Y = 0;
 
-		/* Get the number of cells in the current buffer */
-		if (!GetConsoleScreenBufferInfo(hStdOut, &csbi)) return;
-		cellCount = csbi.dwSize.X *csbi.dwSize.Y;
+		HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
 
-		/* Fill the entire buffer with spaces */
-		if (!FillConsoleOutputCharacter(
-			hStdOut,
-			(TCHAR) ' ',
-			cellCount,
-			homeCoords,
-			&count
-			)) return;
+		GetConsoleScreenBufferInfo(console, &info);
+		FillConsoleOutputCharacter(
+			console,
+			' ',
+			info.dwSize.X * info.dwSize.Y, 
+			coord, 
+			&written);
 
-		/* Fill the entire buffer with the current colors and attributes */
-		if (!FillConsoleOutputAttribute(
-			hStdOut,
-			csbi.wAttributes,
-			cellCount,
-			homeCoords,
-			&count
-			)) return;
+		FillConsoleOutputAttribute(
+			console, 
+			info.wAttributes,
+			info.dwSize.X * info.dwSize.Y, 
+			coord, 
+			&written);
 
-		/* Move the cursor home */
-		SetConsoleCursorPosition(hStdOut, homeCoords);
+		GoToXY(0, 0);
 	}
-
 }

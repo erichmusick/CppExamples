@@ -46,7 +46,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab19 - Rock Paper Scissors
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab20 - ASCII Art", "Lab20\Lab20.vcxproj", "{37BC83F9-850E-48A9-B7D0-9CBE6EE5CC68}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab21", "Lab21\Lab21.vcxproj", "{2E0E9C8A-E93A-44B2-AB5E-B093533E1DA1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab21 - Prime Factorization", "Lab21\Lab21.vcxproj", "{2E0E9C8A-E93A-44B2-AB5E-B093533E1DA1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AddressBook", "AddressBook\AddressBook.vcxproj", "{68F5E1F4-6793-4915-861B-A58C94B20006}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -138,6 +140,10 @@ Global
 		{2E0E9C8A-E93A-44B2-AB5E-B093533E1DA1}.Debug|Win32.Build.0 = Debug|Win32
 		{2E0E9C8A-E93A-44B2-AB5E-B093533E1DA1}.Release|Win32.ActiveCfg = Release|Win32
 		{2E0E9C8A-E93A-44B2-AB5E-B093533E1DA1}.Release|Win32.Build.0 = Release|Win32
+		{68F5E1F4-6793-4915-861B-A58C94B20006}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68F5E1F4-6793-4915-861B-A58C94B20006}.Debug|Win32.Build.0 = Debug|Win32
+		{68F5E1F4-6793-4915-861B-A58C94B20006}.Release|Win32.ActiveCfg = Release|Win32
+		{68F5E1F4-6793-4915-861B-A58C94B20006}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
