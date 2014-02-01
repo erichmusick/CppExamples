@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A642A143-A3D6-4D11-8199-4A4DD70DAE1F}</ProjectGuid>
-    <RootNamespace>Lab08</RootNamespace>
-    <ProjectName>Lab08 - Learning Vector</ProjectName>
+    <ProjectGuid>{410995B1-0352-4382-8E68-A30D5808BD66}</ProjectGuid>
+    <RootNamespace>Lab19</RootNamespace>
+    <ProjectName>Lab19 - Rock Paper Scissors</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -69,7 +69,7 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.vcxproj">
+    <ProjectReference Include="..\..\AP-CS-Misc\Common\Common.vcxproj">
       <Project>{81a4c34c-3ee4-43e4-98d8-00efd1f78e1f}</Project>
     </ProjectReference>
   </ItemGroup>

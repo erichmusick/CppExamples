@@ -36,7 +36,6 @@ char CreditCardType(vector<char> cardNumber);
 */
 char CreditCardType(vector<char> cardNumber) {
 	char cardType;
-	int index;
 
 	switch (cardNumber[0]) {
 	case '4':               // If first number is 4, card type is Visa

@@ -14,7 +14,7 @@
 #include <iomanip>
 #include <vector>
 #include <time.h>
-#include "../Common/CommonFunctions.h"
+#include "../../AP-CS-Misc/Common/CommonFunctions.h"
 #include <Windows.h>
 
 using namespace std;
@@ -143,7 +143,6 @@ int main() {
 	int scoreTies;                      // Number of ties
 	bool firstTime;                     // First time through the do-while?
 	int dispLocationY;
-	char password;
 	int pauseLocation;
 
 	// Seed the random generator

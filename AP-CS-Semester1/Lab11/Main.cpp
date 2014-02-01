@@ -11,7 +11,7 @@ equalateral.
 /*************************** H E A D E R  F I L E S ***************************/
 #include <iostream>
 #include <iomanip>
-#include "../Common/CommonFunctions.h"
+#include "../../AP-CS-Misc/Common/CommonFunctions.h"
 
 using namespace std;
 

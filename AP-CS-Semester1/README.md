@@ -1,6 +1,5 @@
 C++ Code Examples from High School
 ===========
-
 This solution contains the labs from my first semester of AP Computer Science I took way back in high school. As such, some of them, especially the first few, are rather rudimentary. 
 My goal here isn't to demonstrate some awesome skill or ability of my own but rather preserve this bit of history from my early CS days. In fact, any of the questions I whiteboarded
 while interviewing at Microsoft or Google were more complex than these examples here. More than anything, moving this content to GitHub has been for me an exercise in learning Git, 

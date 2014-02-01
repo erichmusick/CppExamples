@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E98FCCA2-AEF5-4B6D-9B69-47F810254F27}</ProjectGuid>
-    <RootNamespace>Lab12</RootNamespace>
-    <ProjectName>Lab12 - Converting CDs to Tapes</ProjectName>
+    <ProjectGuid>{B5921272-9954-4321-AA31-0EF363E4BF71}</ProjectGuid>
+    <RootNamespace>Lab201</RootNamespace>
+    <ProjectName>Lab201 - Graphing Calculator</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -69,7 +69,7 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.vcxproj">
+    <ProjectReference Include="..\..\AP-CS-Misc\Common\Common.vcxproj">
       <Project>{81a4c34c-3ee4-43e4-98d8-00efd1f78e1f}</Project>
     </ProjectReference>
   </ItemGroup>

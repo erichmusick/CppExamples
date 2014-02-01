@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab201 - Graphing Calculator", "Lab201\Lab201.vcxproj", "{B5921272-9954-4321-AA31-0EF363E4BF71}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "..\AP-CS-Misc\Common\Common.vcxproj", "{81A4C34C-3EE4-43E4-98D8-00EFD1F78E1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5921272-9954-4321-AA31-0EF363E4BF71}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B5921272-9954-4321-AA31-0EF363E4BF71}.Debug|Win32.Build.0 = Debug|Win32
+		{B5921272-9954-4321-AA31-0EF363E4BF71}.Release|Win32.ActiveCfg = Release|Win32
+		{B5921272-9954-4321-AA31-0EF363E4BF71}.Release|Win32.Build.0 = Release|Win32
+		{81A4C34C-3EE4-43E4-98D8-00EFD1F78E1F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{81A4C34C-3EE4-43E4-98D8-00EFD1F78E1F}.Debug|Win32.Build.0 = Debug|Win32
+		{81A4C34C-3EE4-43E4-98D8-00EFD1F78E1F}.Release|Win32.ActiveCfg = Release|Win32
+		{81A4C34C-3EE4-43E4-98D8-00EFD1F78E1F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

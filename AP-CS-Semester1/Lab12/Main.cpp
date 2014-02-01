@@ -14,7 +14,7 @@
 /*************************** H E A D E R  F I L E S ***************************/
 #include <iostream>
 #include <iomanip>
-#include "../common/CommonFunctions.h"
+#include "../../AP-CS-Misc/Common/CommonFunctions.h"
 
 using namespace std;
 

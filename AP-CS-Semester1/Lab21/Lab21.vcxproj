@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8EE08836-59AA-493E-A14B-225DD8D7DBE8}</ProjectGuid>
-    <RootNamespace>Lab05</RootNamespace>
-    <ProjectName>Lab05 - Triangle Formulas</ProjectName>
+    <ProjectGuid>{2E0E9C8A-E93A-44B2-AB5E-B093533E1DA1}</ProjectGuid>
+    <RootNamespace>Lab21</RootNamespace>
+    <ProjectName>Lab21 - Prime Factorization</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -58,20 +58,18 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\Erich\Documents\Code\HighSchoolCpp\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.vcxproj">
+    <ProjectReference Include="..\..\AP-CS-Misc\Common\Common.vcxproj">
       <Project>{81a4c34c-3ee4-43e4-98d8-00efd1f78e1f}</Project>
     </ProjectReference>
   </ItemGroup>

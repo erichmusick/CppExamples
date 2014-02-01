@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{52C9BB39-F31B-418E-8A28-7D4B58911F4C}</ProjectGuid>
-    <RootNamespace>Lab11</RootNamespace>
-    <ProjectName>Lab11 - Classifying Triangles</ProjectName>
+    <ProjectGuid>{37BC83F9-850E-48A9-B7D0-9CBE6EE5CC68}</ProjectGuid>
+    <RootNamespace>Lab20</RootNamespace>
+    <ProjectName>Lab20 - ASCII Art</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -69,7 +69,7 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.vcxproj">
+    <ProjectReference Include="..\..\AP-CS-Misc\Common\Common.vcxproj">
       <Project>{81a4c34c-3ee4-43e4-98d8-00efd1f78e1f}</Project>
     </ProjectReference>
   </ItemGroup>
