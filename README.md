@@ -11,7 +11,7 @@ None of the source here quite exactly matches the original. I've modified the co
 The Format
 ===========
 Within each project, you'll see a Main.cpp that contains the code for the assignment. My teacher emphasized documentation, so there should be sufficient information to 
-give you a feel for what's going on. Additionally, at the end of the file, you'll see the sample output ... preserved from the turn of the millenium.
+give you a feel for what's going on. Additionally, at the end of the file, you'll see the sample output ... preserved from the turn of the millennium.
 
 Running the code
 ===========
