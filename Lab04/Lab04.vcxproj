@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FF8D6574-8E2E-4E9A-B948-91CE4C23714C}</ProjectGuid>
     <RootNamespace>Lab04</RootNamespace>
+    <ProjectName>Lab04 - Pythagorean Triple</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8EE08836-59AA-493E-A14B-225DD8D7DBE8}</ProjectGuid>
     <RootNamespace>Lab05</RootNamespace>
+    <ProjectName>Lab05 - Triangle Formulas</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -1,3 +1,9 @@
+/**
+ * I can't take credit for several of these functions. Back when I took my AP Computer Science class, we were using the 
+ * Borland IDE / compiler and I wasn't able to find some of the libraries we were using, so I had to find alternatives. 
+ * Credit for these functions is listed below. The other missing functions I derived by looking at the given examples and 
+ & the MSDN documentation.
+ */
 #include <Windows.h>
 
 namespace Common
@@ -29,8 +35,69 @@ namespace Common
 		}
 	}
 
+	int GetCursorXPosition()
+	{
+		CONSOLE_SCREEN_BUFFER_INFO screenBufferInfo;
+
+		// Obtain a handle to the console screen buffer.
+		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
+		// Finally, call the SetConsoleCursorPosition function.
+		if (!GetConsoleScreenBufferInfo(hConsole, &screenBufferInfo))
+		{
+			return 0;
+		}
+
+		return screenBufferInfo.dwCursorPosition.X;
+	}
+
+	int GetCursorYPosition()
+	{
+		CONSOLE_SCREEN_BUFFER_INFO screenBufferInfo;
+
+		// Obtain a handle to the console screen buffer.
+		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
+		// Finally, call the SetConsoleCursorPosition function.
+		if (!GetConsoleScreenBufferInfo(hConsole, &screenBufferInfo))
+		{
+			return 0;
+		}
+
+		return screenBufferInfo.dwCursorPosition.Y;
+	}
+
+	void ClearToEndOfLine()
+	{
+		CONSOLE_SCREEN_BUFFER_INFO csbi;
+		DWORD count;
+
+		// Obtain a handle to the console screen buffer.
+		HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
+		/* Get the number of cells in the current buffer */
+		if (!GetConsoleScreenBufferInfo(hConsole, &csbi)) return;
+		int columns = csbi.dwSize.Y;
+
+		if (!FillConsoleOutputCharacter(
+			hConsole,
+			(TCHAR) ' ',
+			columns,
+			csbi.dwCursorPosition,
+			&count
+			)) return;
+
+		if (!FillConsoleOutputAttribute(
+			hConsole,
+			csbi.wAttributes,
+			columns,
+			csbi.dwCursorPosition,
+			&count
+			)) return;
+	}
+
 	/**
-	 * Taken from http://www.cplusplus.com/articles/4z18T05o/
+	 * Source: http://www.cplusplus.com/articles/4z18T05o/
 	 */
 	void ClearScreen()
 	{
