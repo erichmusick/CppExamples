@@ -9,4 +9,8 @@ namespace Common
 	// Functions to clear a portion or the entire console window
 	void ClearToEndOfLine();
 	void ClearScreen();
+
+	// Other
+	// Determines the length of the string representation of the given integer value.
+	int intLength(int val);
 }

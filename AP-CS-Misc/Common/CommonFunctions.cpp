@@ -99,4 +99,20 @@ namespace Common
 
 		GoToXY(0, 0);
 	}
+
+	int intLength(int i) {
+		int count = 1;
+
+		if (i < 0) {
+			i = -1 * i;
+			count++;
+		}
+
+		while (i >= 10) {
+			i /= 10;
+			count++;
+		}
+
+		return count;
+	}
 }

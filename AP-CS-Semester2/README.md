@@ -1,7 +1,9 @@
 C++ Code Examples from High School, Part 2
 ===========
-This solution contains the labs from my second semester of AP Computer Science I took way back in high school. None of the source here quite exactly matches the original.
-I've modified the code to use "modern" (STL/Windows) libraries and APIs rather than outdated (conio.h) or libraries from the AP crew (e.g. apvector, apmatrix).
+This solution contains the labs from my second semester of AP Computer Science I took way back in high school. These begin to get more complex, but as with 
+the first semester assignments, my motivation for keeping is more nostalgia than anything. 
+
+None of the source here quite exactly matches the original; I've modified the code to use "modern" (STL/Windows) libraries and APIs rather than outdated (conio.h) or libraries from the AP crew (e.g. apvector, apmatrix).
 
 The Format
 ===========
